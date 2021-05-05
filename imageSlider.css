@@ -1,0 +1,72 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.img-slide {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+}
+
+.img {
+  flex: 1;
+  height: 100%;
+  transform: skew(5deg);
+  cursor: pointer;
+  margin: 0 2px;
+  transition: all 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.img1 {
+  background-image: url("https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_DevilMayCry_image1600w.jpg");
+}
+
+.img2 {
+  background-image: url("https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_DevilMayCry2.jpg");
+}
+
+.img3 {
+  background-image: url("https://switch-brasil.com/wp-content/uploads/2019/11/B053B258-FA2F-4C90-8E41-E0CD111AA1A1.jpeg");
+}
+.img4 {
+  background-image: url("https://image.api.playstation.com/cdn/UP0102/CUSA01671_00/Yh4t5jErXoypHgkUevheALHMnEGxEiTb.png");
+}
+.img5 {
+  background-image: url("https://image.api.playstation.com/cdn/UP0102/CUSA08216_00/nxnwRA9ePhYHVjnfn406ZXw1Ug0ddELA.png");
+}
+
+.img p {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+  transform-origin: 0% 0%;
+  color: white;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.img-slide:hover .img {
+  transform: skew(0);
+}
+
+.img:hover {
+  flex: 5;
+}
+
+.img:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transform: rotate(0deg);
+}
